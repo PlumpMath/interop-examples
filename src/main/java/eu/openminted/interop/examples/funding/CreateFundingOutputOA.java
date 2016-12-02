@@ -65,5 +65,13 @@ public class CreateFundingOutputOA
         catch (Exception e) {
             throw new AnalysisEngineProcessException(e);
         }
-    }
+
+        try (OutputStream docOS = new FileOutputStream("target/funding_webannotation.ttl")) {
+            // RDFDataMgr.write(docOS, m, RDFLanguages.JSONLD);
+            m.write(docOS, "TTL");
+        }
+        catch (Exception e) {
+            throw new AnalysisEngineProcessException(e);
+        }
+}
 }

@@ -1,0 +1,37 @@
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<result1Uri>  a  <http://openminted.eu/ns/fi#Result> ;
+        <http://openminted.eu/ns/fi#funding-info>
+                <funding2Uri> , <funding1Uri> .
+
+<funding1Uri>  a  <http://openminted.eu/ns/fi#Funding> ;
+        <http://openminted.eu/ns/fi#acronym>
+                "OPENAIREPLUS" ;
+        <http://openminted.eu/ns/fi#confidence>
+                "0.77"^^xsd:double ;
+        <http://openminted.eu/ns/fi#egi-related>
+                false ;
+        <http://openminted.eu/ns/fi#fund>
+                "FP7" ;
+        <http://openminted.eu/ns/fi#grantId>
+                "283595" .
+
+<resultUri1>  a       oa:Annotation ;
+        oa:hasBody    <result1Uri> ;
+        oa:hasTarget  "originalDocumentUri" .
+
+<funding2Uri>  a  <http://openminted.eu/ns/fi#Funding> ;
+        <http://openminted.eu/ns/fi#acronym>
+                "OPTIQUE" ;
+        <http://openminted.eu/ns/fi#confidence>
+                "0.92"^^xsd:double ;
+        <http://openminted.eu/ns/fi#egi-related>
+                false ;
+        <http://openminted.eu/ns/fi#fund>
+                "FP7" ;
+        <http://openminted.eu/ns/fi#grantId>
+                "318338" .
