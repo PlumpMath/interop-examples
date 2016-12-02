@@ -10,8 +10,6 @@ import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFLanguages;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 
 public class CreateFundingOutputOA
@@ -61,7 +59,8 @@ public class CreateFundingOutputOA
                 m.createTypedLiteral("originalDocumentUri", XSDstring));
         
         try (OutputStream docOS = new FileOutputStream("target/funding_webannotation.jsonld")) {
-            RDFDataMgr.write(docOS, m, RDFLanguages.JSONLD);
+            // RDFDataMgr.write(docOS, m, RDFLanguages.JSONLD);
+            m.write(docOS, "JSON-LD");
         }
         catch (Exception e) {
             throw new AnalysisEngineProcessException(e);
