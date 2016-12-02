@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <types>
+        <typeDescription>
+            <name>eu.openminted.interop.example.funding.Funding</name>
+            <description>no description</description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>fund</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>acronym</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>grantid</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>confidence</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>EGI_related</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>eu.openminted.interop.example.funding.Result</name>
+            <description>no description</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>funding_info</name>
+                    <description>no description</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>eu.openminted.interop.example.funding.Funding</elementType>
+                    <multipleReferencesAllowed>false</multipleReferencesAllowed>
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>

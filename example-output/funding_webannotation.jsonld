@@ -1,0 +1,208 @@
+{
+  "@graph" : [ {
+    "@id" : "funding1Uri",
+    "@type" : "http://openminted.eu/ns/fi#Funding",
+    "acronym" : "OPENAIREPLUS",
+    "http://openminted.eu/ns/fi#confidence" : 0.77,
+    "http://openminted.eu/ns/fi#egi-related" : false,
+    "fund" : "FP7",
+    "grantId" : "283595"
+  }, {
+    "@id" : "funding2Uri",
+    "@type" : "http://openminted.eu/ns/fi#Funding",
+    "acronym" : "OPTIQUE",
+    "http://openminted.eu/ns/fi#confidence" : 0.92,
+    "http://openminted.eu/ns/fi#egi-related" : false,
+    "fund" : "FP7",
+    "grantId" : "318338"
+  }, {
+    "@id" : "http://openminted.eu/ns/fi#Funding",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ]
+  }, {
+    "@id" : "http://openminted.eu/ns/fi#Result",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ]
+  }, {
+    "@id" : "rdf:Alt",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdf:Alt", "rdfs:Container" ]
+  }, {
+    "@id" : "rdf:Bag",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdf:Bag", "rdfs:Container" ]
+  }, {
+    "@id" : "rdf:List",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Resource", "rdf:List" ]
+  }, {
+    "@id" : "rdf:Property",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Resource", "rdf:Property" ]
+  }, {
+    "@id" : "rdf:Seq",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdf:Seq", "rdfs:Container" ]
+  }, {
+    "@id" : "rdf:Statement",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Resource", "rdf:Statement" ]
+  }, {
+    "@id" : "rdf:XMLLiteral",
+    "@type" : [ "rdfs:Datatype", "rdfs:Class", "rdfs:Resource" ]
+  }, {
+    "@id" : "rdf:first",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:List",
+    "subPropertyOf" : "rdf:first"
+  }, {
+    "@id" : "rdf:nil",
+    "@type" : [ "rdf:List", "rdfs:Resource" ]
+  }, {
+    "@id" : "rdf:object",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Statement",
+    "subPropertyOf" : "rdf:object"
+  }, {
+    "@id" : "rdf:predicate",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Statement",
+    "subPropertyOf" : "rdf:predicate"
+  }, {
+    "@id" : "rdf:rest",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:List",
+    "range" : "rdf:List",
+    "subPropertyOf" : "rdf:rest"
+  }, {
+    "@id" : "rdf:subject",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Statement",
+    "subPropertyOf" : "rdf:subject"
+  }, {
+    "@id" : "rdf:type",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "range" : "rdfs:Class"
+  }, {
+    "@id" : "rdfs:Class",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Resource", "rdfs:Class" ]
+  }, {
+    "@id" : "rdfs:Container",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : "rdfs:Container"
+  }, {
+    "@id" : "rdfs:ContainerMembershipProperty",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:ContainerMembershipProperty", "rdfs:Resource", "rdf:Property" ]
+  }, {
+    "@id" : "rdfs:Datatype",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Datatype", "rdfs:Class", "rdfs:Resource" ]
+  }, {
+    "@id" : "rdfs:Literal",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : [ "rdfs:Resource", "rdfs:Literal" ]
+  }, {
+    "@id" : "rdfs:Resource",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ],
+    "subClassOf" : "rdfs:Resource"
+  }, {
+    "@id" : "rdfs:comment",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "range" : "rdfs:Literal"
+  }, {
+    "@id" : "rdfs:domain",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Property",
+    "range" : "rdfs:Class"
+  }, {
+    "@id" : "rdfs:isDefinedBy",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "subPropertyOf" : [ "rdfs:isDefinedBy", "rdfs:seeAlso" ]
+  }, {
+    "@id" : "rdfs:label",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "range" : "rdfs:Literal"
+  }, {
+    "@id" : "rdfs:range",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Property",
+    "range" : "rdfs:Class"
+  }, {
+    "@id" : "rdfs:seeAlso",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "subPropertyOf" : "rdfs:seeAlso"
+  }, {
+    "@id" : "rdfs:subClassOf",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdfs:Class",
+    "range" : "rdfs:Class"
+  }, {
+    "@id" : "rdfs:subPropertyOf",
+    "@type" : [ "rdf:Property", "rdfs:Resource" ],
+    "domain" : "rdf:Property",
+    "range" : "rdf:Property"
+  }, {
+    "@id" : "oa:Annotation",
+    "@type" : [ "rdfs:Class", "rdfs:Resource" ]
+  }, {
+    "@id" : "result1Uri",
+    "@type" : "http://openminted.eu/ns/fi#Result",
+    "funding-info" : [ "funding2Uri", "funding1Uri" ]
+  }, {
+    "@id" : "resultUri1",
+    "@type" : "oa:Annotation",
+    "hasBody" : "result1Uri",
+    "hasTarget" : "originalDocumentUri"
+  } ],
+  "@context" : {
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "funding-info" : {
+      "@id" : "http://openminted.eu/ns/fi#funding-info",
+      "@type" : "@id"
+    },
+    "egi-related" : {
+      "@id" : "http://openminted.eu/ns/fi#egi-related",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "confidence" : {
+      "@id" : "http://openminted.eu/ns/fi#confidence",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "grantId" : {
+      "@id" : "http://openminted.eu/ns/fi#grantId"
+    },
+    "acronym" : {
+      "@id" : "http://openminted.eu/ns/fi#acronym"
+    },
+    "fund" : {
+      "@id" : "http://openminted.eu/ns/fi#fund"
+    },
+    "hasTarget" : {
+      "@id" : "http://www.w3.org/ns/oa#hasTarget"
+    },
+    "hasBody" : {
+      "@id" : "http://www.w3.org/ns/oa#hasBody",
+      "@type" : "@id"
+    },
+    "oa" : "http://www.w3.org/ns/oa#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

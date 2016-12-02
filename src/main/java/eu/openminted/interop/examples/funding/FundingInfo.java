@@ -18,18 +18,21 @@
 package eu.openminted.interop.examples.funding;
 
 /**
- * WebAnnotation vocabulary.
- * 
- * @see <a href="https://www.w3.org/TR/2016/CR-annotation-vocab-20160906/">Web Annotation Vocabulary</a>
+ * OpenMinTeD Funding Info vocabulary.
  */
-public class WebAnnotation
+public class FundingInfo
 {
-    public static final String PREFIX_OA = "oa";
+    public static final String PREFIX_FI = "fi";
     
-    public static final String NS_OA = "http://www.w3.org/ns/oa#";
+    public static final String NS_FI = "http://openminted.eu/ns/fi#";
 
-    public static final String PROP_HAS_BODY = NS_OA + "hasBody";
-    public static final String PROP_HAS_TARGET = NS_OA + "hasTarget";
+    public static final String PROP_FUND = NS_FI + "fund";
+    public static final String PROP_ACRONYM = NS_FI + "acronym";
+    public static final String PROP_GRANT_ID = NS_FI + "grantId";
+    public static final String PROP_CONFIDENCE = NS_FI + "confidence";
+    public static final String PROP_EGI_RELATED = NS_FI + "egi-related";
+    public static final String PROP_FUNDING_INFO = NS_FI + "funding-info";
 
-    public static final String TYPE_ANNOTATION = NS_OA + "Annotation";
+    public static final String TYPE_FUNDING = NS_FI + "Funding";
+    public static final String TYPE_RESULT = NS_FI + "Result";
 }
